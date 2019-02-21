@@ -9,7 +9,8 @@ adder+=ele;
 });
 document.write("<p>Mean is : "+adder/data.length+"</p>");
 medianData = data.slice();
-medianData.sort();
+medianData.sort((a,b) => a-b);
+console.log(medianData);
 while (medianData.length>2)
 {
   medianData.pop();
